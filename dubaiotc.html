@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93d2a1e4fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Dubai OTC Pay</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .nav-link-hover span:hover{
+            color: rgb(248, 204, 7);
+        }
+        .banner-section-bg-container {
+            background-color: royalblue;
+            background-image: url("download.png");
+            height: 100vh;
+            background-size: cover;
+        }
+        .btn-1:hover{
+            /* background-color: rgba(252, 170, 18, 0.925); */
+            transform: scale(0.8s);
+            transition-duration: 2s;
+            z-index: -1;
+            background: transparent; 
+        }
+        .btn-2:hover{
+            background: rgba(252, 170, 18, 0.925);
+            transform: scale(0.8s);
+            transition-duration: 2s;
+            z-index: -1;
+            color: black;
+            font-weight: 700;
+            /* background: transparent;  */
+        }
+        .banner-section-img-box{
+            margin: 0px auto;
+            animation: move 3s linear infinite;
+        }
+        @keyframes move{
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(25px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .box-icon{
+            animation: myAnim 5s linear infinite;
+        }
+        @keyframes myAnim{
+            0%, 100% {
+                transform: translateX(0%);
+                transform-origin: 50% 50%;
+            }
+            15% {
+                transform: translateX(-30px) rotate(-6deg);
+            }
+            30% {
+                transform: translateX(15px) rotate(6deg);
+            }
+            45% {
+                transform: translateX(-15px) rotate(-3.6deg);
+            }
+            60% {
+                transform: translateX(9px) rotate(2.4deg);
+            }
+            75% {
+                transform: translateX(-6px) rotate(-1.2deg);
+            }
+        }
+        .hover-cards{
+            transition: all 0.8s;
+        }
+        .hover-cards:hover{
+            transform: scale(1.04);
+        }
+    </style>
+</head>
+<body>
+    <!--Header Top Start-->
+    <header class="navbar navbar-expand-md bg-white">
+        <div class="container">
+            <a class="navbar-brand" target="_blank" href="https://www.dubaiotcpay.com/"><img width=200px; height=50px; src=".\images\logo.png"></a>
+            <div class="collapse navbar-collapse justify-content-end d-xl-none d-xxl-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link-hover nav-link text-dark" target="_blank" href="https://telegram.me/dubai_otc" target="_blank"><img src=".\images\Telegram_logo.png" class="mr-5" width="45px" height="45px" alt="telegram"><span class="ml-5">      @Dubai_OTC</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-hover nav-link text-dark" target="_blank" href="https://wa.me/+971522853423"><img src=".\images\WhatsApp.jpg" class="mr-5" width="45px" height="45px" alt="whatsapp"><span class="ml-5">      +971 522853423</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Header Top End-->
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-md bg-black sticky-top">
+        <div class="container">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">OUR RATES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <a class="navbar-brand text-white" href="#">Register</a> -->
+            <button type="button" class="btn btn-warning rounded-0 py-2 ps-4 pe-4 fs-5 fw-bolder"><a href="https://www.dubaiotcpay.com/register" target="_blank" class="text-decoration-none text-white">Register</a></button>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Banner Section Start-->
+    <div class="container-fluid banner-section-bg-container d-flex flex-column justify-content-center p-5 align-center">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h3 class="card-title text-white fs-1 fw-bold pb-3">CONVERT CRYPTOCURRENCY TO CASH IN DUBAI</h3>
+                    <h5 class="card-title text-black fs-5 fw-bold pb-3">Leading Over-The-Counter (OTC) desk for buying and selling top cryptocurrencies in UAE</h5>
+                    <button type="button" class="btn btn-1 btn-dark rounded-0 py-2 ps-4 pe-4 me-3"><img src=".\images\Telegram_logo.png" width="22px" height="22px" alt=""> Telegram</button>
+                    <button type="button" class="btn btn-1 btn-dark rounded-0 py-2 ps-4 pe-4"><img src=".\images\WhatsApp.jpg" width="22px" height="22px" alt=""> Whatsapp</button>
+            </div>
+            <div class="banner-section-img-box col-12 col-lg-6 p-4">
+                <img src=".\images\slides\buy-crypto.png" alt="Buy Crypto" width="400px" height="auto">
+            </div>
+        </div>
+    </div>
+    <!--Banner Section End-->
+
+    <!--Banner Section Bottom Start-->
+    <div class="container mt-5 mb-5">
+        <div class="row shadow-lg p-3 rounded-4">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 p-2 text-center">
+                <img src=".\images\iconbox\03.png" class="box-icon mb-3" alt="USDT" width="60px" height="60px">
+                <p class="text-light-emphasis fw-bolder fs-3">USDT</p>
+                <p class="text-light-emphasis fw-bolder fs-3">3.70 AED</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3 p-2 text-center">
+                <img src=".\images\iconbox\Bitcoin-icon.png" class="box-icon mb-3" alt="USDT" width="60px" height="60px">
+                <p class="text-light-emphasis fw-bolder fs-3">Bitcoins</p>
+                <p class="text-light-emphasis fw-bolder fs-3">101,451.63<br>AED</p>
+            </div>
+            <div class="col-4 col-md-4 col-lg-3 col-xl-3 p-2 text-center">
+                <img src=".\images\iconbox\02.png" class="box-icon mb-3" alt="USDT" width="60px" height="60px">
+                <p class="text-light-emphasis fw-bolder fs-3">Ethereum</p>
+                <p class="text-light-emphasis fw-bolder fs-3">6,752.98<br>AED</p>
+            </div>
+            <div class="col-4 col-md-6 col-lg-3 col-xl-2 p-2 text-center">
+                <img src=".\images\iconbox\usd-coin-usdc-logo.png" class="box-icon mb-3" alt="USDT" width="60px" height="60px">
+                <p class="text-light-emphasis fw-bolder fs-3">USDC</p>
+                <p class="text-light-emphasis fw-bolder fs-3">3.70 AED</p>
+            </div>
+            <div class="col-4 col-md-6 col-lg-12 col-xl-2 p-2 text-center">
+                <img src=".\images\iconbox\busdbsc.png" class="box-icon mb-3" alt="USDT" width="60px" height="60px">
+                <p class="text-light-emphasis fw-bolder fs-3">BUSD</p>
+                <p class="text-light-emphasis fw-bolder fs-3">3.70 AED</p>
+            </div>
+        </div>
+    </div>
+    <!--Buttons Start-->
+    <div class="container text-center mb-5">
+        <button type="button" class="btn btn-warning rounded-0 py-2 ps-4 pe-4 me-3 fs-6 fw-bold text-white">BUY</button>
+        <button type="button" class="btn btn-dark rounded-0 py-2 ps-4 pe-4 fs-6 fw-bold text-white">SELL</button>
+    </div>
+    <!--Buttons End-->
+    <!--Banner Section Bottom End-->
+
+    <!--Exchange Start-->
+    <div class="bg-light pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="text-black ps-5 pe-5 ms-5 me-5 fw-bold">Trade with us using your favourite of P2P exchange securely</h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="hover-cards bg-white text-center shadow-lg rounded-4 menu-item-card p-3 mb-3">
+                        <img src=".\images\exchange\binance.png" alt="Binance" width="200px" height="150px">
+                        <h1 class="text-black fw-bold">1600+</h1>
+                        <hr class="pb-2" style="width:80%; display: block; margin: auto;">
+                        <a href="#" class="text-black text-decoration-none pb-5 fs-4 fw-bold">Trade Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="hover-cards bg-white text-center shadow-lg rounded-4 menu-item-card p-3 mb-3">
+                        <img src=".\images\exchange\huobi.png" alt="huobi" width="200px" height="150px">
+                        <h1 class="text-black fw-bold">100+</h1>
+                        <hr class="pb-2" style="width:80%; display: block; margin: auto;">
+                        <a href="#" class="text-black text-decoration-none pb-5 fs-4 fw-bold">Trade Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="hover-cards bg-white text-center shadow-lg rounded-4 menu-item-card p-3 mb-3">
+                        <img src=".\images\exchange\kucoin.png" alt="kucoin" width="200px" height="150px">
+                        <h1 class="text-black fw-bold">70+</h1>
+                        <hr class="pb-2" style="width:80%; display: block; margin: auto;">
+                        <a href="#" class="text-black text-decoration-none pb-5 fs-4 fw-bold">Trade Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="hover-cards bg-white text-center shadow-lg rounded-4 menu-item-card p-3 mb-3">
+                        <img src=".\images\exchange\okx.png" alt="okx" width="200px" height="150px">
+                        <h1 class="text-black fw-bold">200+</h1>
+                        <hr class="pb-2" style="width:80%; display: block; margin: auto;">
+                        <a href="#" class="text-black text-decoration-none pb-5 fs-4 fw-bold">Trade Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="hover-cards bg-white text-center shadow-lg rounded-4 menu-item-card p-3 mb-3">
+                        <img src=".\images\exchange\paxful.png" alt="paxful" width="200px" height="150px">
+                        <h1 class="text-black fw-bold">150+</h1>
+                        <hr class="pb-2" style="width:80%; display: block; margin: auto;">
+                        <a href="#" class="text-black text-decoration-none pb-5 fs-4 fw-bold">Trade Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Exchange End-->
+
+    <!-- Trading Start -->
+    <div class="container-fluid p-5 bg-warning text-white text-center">
+        <h1 class="text-dark fw-bold fs-2">How to start Trading with us</h1>
+        <p class="text-dark fs-6 fw-bolder">Quick Steps for Buying & Selling Cryptocurrency.</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-4 p-2 text-center">
+                    <i class="hover-cards fa-solid fa-arrow-right-to-bracket border border-3 border-dark bg-white pt-5 mb-3" style="color: black; font-size: 50px; width: 150px; height: 150px; border-radius: 50%;">
+                        <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: relative; bottom: 35px; right: 20px;">01</h5>
+                    </i>
+                    <!-- <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: absolute;">01</h5> -->
+                    <h2 class="text-dark fw-light fs-3">Register with Us</h2>
+                    <p class="text-dark fw-light">Get verified</p>
+                    <button type="button" class="btn btn-1 btn-dark fs-5 rounded-0 py-2 ps-3 pe-3">Register Now</button>
+                </div>
+                
+                <div class="col-12 col-md-4 p-2 text-center">
+                    <i class="hover-cards fa-solid fa-calculator border border-3 border-dark bg-white pt-5 mb-3" style="color: black; font-size: 50px; width: 150px; height: 150px; border-radius: 50%;">
+                        <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: relative; bottom: 35px; right: 20px;">02</h5>
+                    </i>
+                    <!-- <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: absolute;">02</h5> -->
+                    <h2 class="text-dark fw-light fs-3">Our Rates</h2>
+                    <p class="text-dark fw-light">Check & calculate rates</p>
+                    <button type="button" class="btn btn-1 btn-dark fs-5 rounded-0 py-2 ps-3 pe-3">Check  Rates</button>
+                </div>
+                <div class="col-12 col-md-4 p-2 text-center">
+                    <i class="hover-cards fa-regular fa-calendar border border-3 border-dark bg-white pt-5 mb-3" style="color: black; font-size: 50px; width: 150px; height: 150px; border-radius: 50%;">
+                        <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: relative; bottom: 35px; right: 20px;">03</h5>
+                    </i>
+                    <!-- <h5 class="text-dark fw-bolder border border-3 border-dark bg-warning rounded-circle" style="width: 35px; height:35px; position: absolute;">03</h5> -->
+                    <h2 class="text-dark fw-light fs-3">Schedule an Appointment</h2>
+                    <p class="text-dark fw-light">Contact us via WhatsApp / Telegram</p>
+                    <button type="button" class="btn btn-1 btn-dark fs-5 rounded-0 py-2 ps-3 pe-3">Contact Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Trading End -->
+
+    <!-- Trading Platform Start -->
+    <div class="container-fluid bg-white mb-3 p-5">
+        <div class="row">
+            <div class="banner-section-img-box col-12 col-lg-6 text-center">
+                <img src="./images/women.png" alt="Women" style="width: 60%; height: 100%;">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="fw-bolder fs-1 p-5">Move to a more advanced trading platform with P2P crypto exchange</h2>
+                <p class="text-secondary fs-5 pe-5 ps-5 pb-4 fw-light">Create your own marketplace and trade off crypto with others in your local currency. A simpler way to trade cryptocurrencies with unlimited deposits, withdrawals and trades by complying with KYC. We only trade with KYC verified users with most trusted and secured exchanges like <b class="text-dark fw-bolder">Binance, Kucoin, Huobi, Kraken etc.</b></p>
+                <div class="d-flex">
+                    <i class="fa-solid fa-angles-right pe-2 ps-5 pt-2"></i>
+                    <p class="text-dark fw-bolder fs-5">P2P flexibility as crypto investors</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-angles-right pe-2 ps-5 pt-2"></i>
+                    <p class="text-dark fw-bolder fs-5"> P2P transactions on supported cryptos</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-angles-right pe-2 ps-5 pt-2"></i>
+                    <p class="text-dark fw-bolder fs-5"> Easy Bank Transaction Payment Methods (No Cash Payments)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Trading Platform End -->
+
+    <!-- Crypto Currency Start -->
+    <div class="container-fluid p-5 text-center bg-dark">
+        <div class="row">
+            <div class="col-12 col-lg-3 pt-5">
+                <h5 class="text-warning pb-5 fs-5 fw-bolder">CRYPTOCURRENCIES</h5>
+                <h1 class="text-white fw-bold" style="font-size: 70px;">100+</h1>
+            </div>
+            <div class="col-12 col-lg-3 pt-5">
+                <h5 class="text-warning pb-5 fs-5 fw-bolder">CUSTOMERS</h5>
+                <h1 class="text-white fw-bold" style="font-size: 70px;">3000+</h1>
+            </div>
+            <div class="col-12 col-lg-3 pt-5">
+                <h5 class="text-warning pb-5 fs-5 fw-bolder">TRANSACTIONS</h5>
+                <h1 class="text-white fw-bold" style="font-size: 70px;">5370+</h1>
+            </div>
+            <div class="col-12 col-lg-3 pt-5">
+                <h5 class="text-warning pb-5 fs-5 fw-bolder">CUSTOMER REVIEWS</h5>
+                <h1 class="text-white fw-bold" style="font-size: 70px;">500+</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Crypto Currency End -->
+
+    <!-- Dubai Market Start -->
+    <div class="container-fluid bg-white mb-3 p-5">
+        <h5 class="text-dark fw-bolder pb-5 fs-3 text-center">The Most Trusted and Secure Broker in the Dubai Market</h5>
+        <p class="text-secondary text-center pb-5 fs-6 fw-bolder">Buy & Sell your cryptocurrency for AED easily & instantly!</p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">0% Transaction Fees</p>
+                <!-- <i class="fa-solid fa-circle-check text-dark bg-warning rounded-circle" style="color: #f8910a; font-size: 30px; position: absolute; left: 35px;"></i> -->
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Cash In person</p>
+                <!-- <i class="fa-solid fa-circle-check text-dark bg-warning rounded-circle" style="color: #f8910a; font-size: 30px; position: absolute; left: 35px;"></i> -->
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Cash Deposit into bank account</p>
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Cash Delivery Available (t&c apply)</p>
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Wire Transfer & SEPA Transfer Available</p>
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Accept 100+ cryptocurrencies</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Best Exchange Rate in the Market</p>
+                <!-- <i class="fa-solid fa-circle-check text-dark bg-warning rounded-circle" style="color: #f8910a; font-size: 30px; position: absolute; left: 35px;"></i> -->
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Binance P2P-Pro Global Merchant</p>
+                <!-- <i class="fa-solid fa-circle-check text-dark bg-warning rounded-circle" style="color: #f8910a; font-size: 30px; position: absolute; left: 35px;"></i> -->
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Available on major P2P Exchanges</p>
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">Multiple Fiat Currencies are available</p>
+                <p class="hover-cards text-dark fs-5 p-4 mb-3 bg-primary rounded-4">
+                    Regulated & Licensed by IFZA</p>
+            </div>
+        </div>
+    </div>
+    <!-- Dubai Market End -->
+
+    <!-- Clients Testimonials Start -->
+    <div class="container-fluid bg-success p-5 mb-5 text-center">
+        <h3 class="text-white fw-bolder mb-5">Clients Testimonial</h3>
+        <div id="carouselExampleInterval pb-5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="padding-left: 380px;">
+                <div class="carousel-item active ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review1.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review2.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review3.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review4.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review5.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ps-5 h-50 w-50" data-bs-interval="2000">
+                    <img src="./images/testimonials/review6.png" class="d-block w-100" alt="...">
+                    <img src="./images/testimonials/review1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Clients Testimonials End -->
+
+    <!-- Getin Touch Start -->
+    <div class="container-fluid pt-3 pb-5 text-center">
+        <h1 class="fs-2 fw-bolder">Get In Touch With Us</h1>
+        <p class="fs-6 pt-3 fw-light text-secondary ">Drop a message and our dedicated sales team will contact you in shortest time possible.</p>
+        <div class="row">
+            <div class="text-center pb-3">
+                <button type="button" class="btn-2 btn btn-dark rounded-0 py-2 ps-4 pe-4 me-3"><img src=".\images\Telegram_logo.png" width="22px" height="22px" alt="Telegram"> Telegram</button>
+                <button type="button" class="btn-2 btn btn-dark rounded-0 py-2 ps-4 pe-4"><img src=".\images\WhatsApp.jpg" width="22px" height="22px" alt="WhatsApp"> Whatsapp</button>
+            </div>
+        </div>
+    </div>
+    <!-- Getin Touch End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 col-lg-5 pt-5">
+                <a class="navbar-brand" href="#"><img width=200px; height=50px; src=".\images\logo-footer.png"></a>
+                <p class="mt-3 mb-3 fw-bolder text-secondary">Dubai OTC is the most reputable over-the-counter (OTC) desk to Buy and Sell cryptocurrency. We support over 50+ different cryptocurrencies, including Tether USDT, Bitcoin, Ethereum (ETH), USDC, BUSD and constantly extending its supported crypto assets. The company charges 0% transaction fees and offers personal one-on-one OTC trade support to all traders.</p>
+                <p class="text-white fw-bolder">Follow Us</p>
+                <div class="d-flex icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 pt-5 text-white fw-bolder">
+                <p>Buy Cryptocurrency in UAE</p>
+                <p class="text-secondary">Buy USDT in Dubai</p>
+                <p class="text-secondary">Buy Bitcoin in Dubai</p>
+                <p class="text-secondary">Buy USDC in Dubai</p>
+                <p class="text-secondary">Buy BUSD in Dubai</p>
+                <p class="text-secondary pb-3">Buy Bitcoin in Dubai</p>
+                <p>Sell Cryptocurrency in UAE</p>
+                <p class="text-secondary">Sell USDT in Dubai</p>
+                <p class="text-secondary">Sell Bitcoin in Dubai</p>
+                <p class="text-secondary">Sell USDC in Dubai</p>
+                <p class="text-secondary">Sell BUSD in Dubai</p>
+                <p class="text-secondary pb-3">Sell Bitcoin in Dubai</p>
+            </div>
+            <div class="col-12 col-lg-3 pt-5 text-white fw-bolder">
+                <p>Company</p>
+                <p class="text-secondary">About us</p>
+                <p class="text-secondary">FAQ</p>
+                <p class="text-secondary">Contact Us</p>
+                <p>Working Hours</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Monday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Tuesday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Wednesday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Thursday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Friday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Saturday : </span>10AM to 7PM</p>
+                <p class="text-secondary"><span class="text-warning fw-light">Sunday : </span>10AM to 7PM</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-black p-3 text-center">
+        <div class="row">
+            <p class="text-secondary fs-6 fw-light">Copyright @2022 Dubai OTC | Terms & Conditions | Privacy Policy | AML Policy</p>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+</body>
+</html>
